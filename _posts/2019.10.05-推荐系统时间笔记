@@ -1,0 +1,21 @@
+---
+layout: post
+title: 2019-10-05-推荐系统实践笔记
+---
+1. 好的推荐系统
+  1.1. 评判标准
+    - 评判用户使用体验 
+      1. Scoreing: RMSE/MAE
+      2. Top-N: Precision/Recall
+      3. 多样性 Diversity: 每对推荐物品的归一化相似度之和
+      4. 新颖性 
+      5. 惊喜度 serendipity
+      6. 信任度
+    - 评判商户使用体验 Metric for merchant:
+      1. 覆盖率 Covarage
+      2. 基尼系数 Gini Index: 最不热门（物品流行度最小）的x%物品在推荐物品中的占比y%
+      3. 信息熵 Entropy: 物品流行度分布的混乱度
+  1.2 评判方法
+    - 离线测试
+    - 用户调查
+    - 在线测试/AB Test
